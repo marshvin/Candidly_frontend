@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Brain, BookOpen, Home, LogIn, Menu, X, UserPlus } from 'lucide-react';
+import { Brain, CreditCard, Info, Home, LogIn, Menu, X, UserPlus, MessageCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
@@ -17,35 +16,41 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="skillforge-container">
+      <div className="candidly-container">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
-              <Brain className="h-8 w-8 text-skillforge-600" />
+              <Brain className="h-8 w-8 text-candidly-600" />
               <span className="text-xl font-bold text-gray-900">Candidly</span>
             </Link>
           </div>
 
           {/* Desktop menu */}
           <div className="hidden md:flex md:items-center md:space-x-6">
-            <Link to="/" className="text-gray-700 hover:text-skillforge-600 px-3 py-2 rounded-md text-sm font-medium">
+            <Link to="/" className="text-gray-700 hover:text-candidly-600 px-3 py-2 rounded-md text-sm font-medium">
               Home
             </Link>
-            <Link to="/exams" className="text-gray-700 hover:text-skillforge-600 px-3 py-2 rounded-md text-sm font-medium">
-              Assessments
+            <Link to="/features" className="text-gray-700 hover:text-candidly-600 px-3 py-2 rounded-md text-sm font-medium">
+              Features
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-skillforge-600 px-3 py-2 rounded-md text-sm font-medium">
+            <Link to="/pricing" className="text-gray-700 hover:text-candidly-600 px-3 py-2 rounded-md text-sm font-medium">
+              Pricing
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-candidly-600 px-3 py-2 rounded-md text-sm font-medium">
               About
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-candidly-600 px-3 py-2 rounded-md text-sm font-medium">
+              Contact
             </Link>
             {showSignInButton && (
               <div className="flex space-x-2">
                 <Link to="/signin">
-                  <Button variant="outline" className="border-skillforge-600 text-skillforge-600 hover:bg-skillforge-50">
+                  <Button variant="outline" className="border-candidly-600 text-candidly-600 hover:bg-candidly-50">
                     <LogIn className="mr-2 h-4 w-4" /> Sign In
                   </Button>
                 </Link>
                 <Link to="/signup">
-                  <Button className="bg-skillforge-600 hover:bg-skillforge-700">
+                  <Button className="bg-candidly-600 hover:bg-candidly-700">
                     <UserPlus className="mr-2 h-4 w-4" /> Sign Up
                   </Button>
                 </Link>
@@ -57,7 +62,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-skillforge-600 focus:outline-none"
+              className="text-gray-700 hover:text-candidly-600 focus:outline-none"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -80,7 +85,7 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
           <Link
             to="/"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-skillforge-600 hover:bg-gray-50"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-candidly-600 hover:bg-gray-50"
             onClick={() => setIsOpen(false)}
           >
             <div className="flex items-center">
@@ -89,21 +94,44 @@ const Navbar = () => {
             </div>
           </Link>
           <Link
-            to="/exams"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-skillforge-600 hover:bg-gray-50"
+            to="/features"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-candidly-600 hover:bg-gray-50"
             onClick={() => setIsOpen(false)}
           >
             <div className="flex items-center">
-              <BookOpen className="mr-2 h-5 w-5" />
-              Assessments
+              <Info className="mr-2 h-5 w-5" />
+              Features
+            </div>
+          </Link>
+          <Link
+            to="/pricing"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-candidly-600 hover:bg-gray-50"
+            onClick={() => setIsOpen(false)}
+          >
+            <div className="flex items-center">
+              <CreditCard className="mr-2 h-5 w-5" />
+              Pricing
             </div>
           </Link>
           <Link
             to="/about"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-skillforge-600 hover:bg-gray-50"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-candidly-600 hover:bg-gray-50"
             onClick={() => setIsOpen(false)}
           >
-            About
+            <div className="flex items-center">
+              <Info className="mr-2 h-5 w-5" />
+              About
+            </div>
+          </Link>
+          <Link
+            to="/contact"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-candidly-600 hover:bg-gray-50"
+            onClick={() => setIsOpen(false)}
+          >
+            <div className="flex items-center">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Contact
+            </div>
           </Link>
           {showSignInButton && (
             <>
@@ -111,7 +139,7 @@ const Navbar = () => {
                 to="/signin"
                 onClick={() => setIsOpen(false)}
               >
-                <Button variant="outline" className="w-full mt-3 border-skillforge-600 text-skillforge-600 hover:bg-skillforge-50">
+                <Button variant="outline" className="w-full mt-3 border-candidly-600 text-candidly-600 hover:bg-candidly-50">
                   <LogIn className="mr-2 h-4 w-4" /> Sign In
                 </Button>
               </Link>
@@ -119,7 +147,7 @@ const Navbar = () => {
                 to="/signup"
                 onClick={() => setIsOpen(false)}
               >
-                <Button className="w-full mt-3 bg-skillforge-600 hover:bg-skillforge-700">
+                <Button className="w-full mt-3 bg-candidly-600 hover:bg-candidly-700">
                   <UserPlus className="mr-2 h-4 w-4" /> Sign Up
                 </Button>
               </Link>

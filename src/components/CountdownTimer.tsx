@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Progress } from "@/components/ui/progress";
 import { AlertCircle, Clock } from 'lucide-react';
@@ -61,7 +60,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ duration, onTimeUp }) =
       <Progress 
         value={progressPercentage} 
         className={`h-2 ${isWarning ? 'bg-red-100' : 'bg-gray-100'}`} 
-        indicatorClassName={isWarning ? 'bg-red-500' : 'bg-skillforge-500'} 
+        indicatorClassName={isWarning ? 'bg-red-500' : 'bg-candidly-500'} 
       />
     </div>
   );

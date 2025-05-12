@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Brain } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,15 +5,15 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="skillforge-container py-8 md:py-12">
+      <div className="candidly-container py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2">
-              <Brain className="h-6 w-6 text-skillforge-600" />
+              <Brain className="h-6 w-6 text-candidly-600" />
               <span className="text-lg font-bold text-gray-900">Candidly</span>
             </Link>
             <p className="mt-4 text-sm text-gray-600">
-              AI-powered technical assessments to help you find the perfect candidates for your team.
+              AI-powered recruitment platform to help you find the perfect candidates for your team.
             </p>
           </div>
           
@@ -25,18 +24,18 @@ const Footer = () => {
               </h3>
               <ul className="mt-4 space-y-2">
                 <li>
-                  <Link to="/exams" className="text-sm text-gray-600 hover:text-skillforge-600">
-                    Assessments
+                  <Link to="/features" className="text-sm text-gray-600 hover:text-candidly-600">
+                    Features
                   </Link>
                 </li>
                 <li>
-                  <Link to="/practice" className="text-sm text-gray-600 hover:text-skillforge-600">
-                    Demo Tests
+                  <Link to="/pricing" className="text-sm text-gray-600 hover:text-candidly-600">
+                    Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link to="/results" className="text-sm text-gray-600 hover:text-skillforge-600">
-                    Analytics
+                  <Link to="/contact" className="text-sm text-gray-600 hover:text-candidly-600">
+                    Contact Us
                   </Link>
                 </li>
               </ul>
@@ -48,17 +47,17 @@ const Footer = () => {
               </h3>
               <ul className="mt-4 space-y-2">
                 <li>
-                  <Link to="/documentation" className="text-sm text-gray-600 hover:text-skillforge-600">
-                    Documentation
+                  <Link to="/blog" className="text-sm text-gray-600 hover:text-candidly-600">
+                    Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/guides" className="text-sm text-gray-600 hover:text-skillforge-600">
+                  <Link to="/guides" className="text-sm text-gray-600 hover:text-candidly-600">
                     Hiring Guides
                   </Link>
                 </li>
                 <li>
-                  <Link to="/faqs" className="text-sm text-gray-600 hover:text-skillforge-600">
+                  <Link to="/faqs" className="text-sm text-gray-600 hover:text-candidly-600">
                     FAQs
                   </Link>
                 </li>
@@ -71,17 +70,17 @@ const Footer = () => {
               </h3>
               <ul className="mt-4 space-y-2">
                 <li>
-                  <Link to="/about" className="text-sm text-gray-600 hover:text-skillforge-600">
+                  <Link to="/about" className="text-sm text-gray-600 hover:text-candidly-600">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="text-sm text-gray-600 hover:text-skillforge-600">
-                    Contact
+                  <Link to="/careers" className="text-sm text-gray-600 hover:text-candidly-600">
+                    Careers
                   </Link>
                 </li>
                 <li>
-                  <Link to="/privacy" className="text-sm text-gray-600 hover:text-skillforge-600">
+                  <Link to="/privacy" className="text-sm text-gray-600 hover:text-candidly-600">
                     Privacy
                   </Link>
                 </li>

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { z } from 'zod';
@@ -89,7 +88,7 @@ const SignUp = () => {
           <div className="text-center space-y-2">
             <h1 className="text-2xl font-bold text-gray-900">Create Your Account</h1>
             <p className="text-gray-600">
-              Join SkillForge to start taking exams and track your progress
+              Join Candidly to start taking exams and track your progress
             </p>
           </div>
 
@@ -210,7 +209,7 @@ const SignUp = () => {
                     </FormControl>
                     <div className="space-y-1 leading-none">
                       <FormLabel className="text-sm font-medium cursor-pointer">
-                        I accept the <Link to="/terms" className="text-skillforge-600 hover:underline">terms and conditions</Link>
+                        I accept the <Link to="/terms" className="text-candidly-600 hover:underline">terms and conditions</Link>
                       </FormLabel>
                     </div>
                     <FormMessage />
@@ -218,14 +217,14 @@ const SignUp = () => {
                 )}
               />
               
-              <Button type="submit" className="w-full bg-skillforge-600 hover:bg-skillforge-700">
+              <Button type="submit" className="w-full bg-candidly-600 hover:bg-candidly-700">
                 <UserPlus className="mr-2 h-4 w-4" /> Create Account
               </Button>
               
               <div className="text-center">
                 <p className="text-sm text-gray-600">
                   Already have an account?{' '}
-                  <Link to="/signin" className="text-skillforge-600 hover:underline font-medium">
+                  <Link to="/signin" className="text-candidly-600 hover:underline font-medium">
                     Sign in
                   </Link>
                 </p>

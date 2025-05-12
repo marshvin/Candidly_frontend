@@ -13,18 +13,18 @@ const Home = () => {
       
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 flex-grow">
-        <div className="skillforge-container">
+        <div className="candidly-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-                <span className="text-skillforge-600">AI-powered</span> technical assessments for hiring
+                <span className="text-candidly-600">AI-powered</span> technical assessments for hiring
               </h1>
               <p className="text-xl text-gray-600">
                 Candidly helps you find the perfect candidates with intelligent technical assessments and AI-driven insights.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
-                  className="px-8 py-6 text-lg bg-skillforge-600 hover:bg-skillforge-700"
+                  className="px-8 py-6 text-lg bg-candidly-600 hover:bg-candidly-700"
                   asChild
                 >
                   <Link to="/exams">
@@ -53,7 +53,7 @@ const Home = () => {
       
       {/* Features Section */}
       <section className="py-16 bg-white">
-        <div className="skillforge-container">
+        <div className="candidly-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Why Choose Candidly?</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -62,9 +62,9 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="skillforge-card p-6">
-              <div className="rounded-full bg-skillforge-100 w-12 h-12 flex items-center justify-center mb-4">
-                <Brain className="text-skillforge-600 h-6 w-6" />
+            <div className="candidly-card p-6">
+              <div className="rounded-full bg-candidly-100 w-12 h-12 flex items-center justify-center mb-4">
+                <Brain className="text-candidly-600 h-6 w-6" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">AI-Powered Analysis</h3>
               <p className="text-gray-600">
@@ -72,9 +72,9 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="skillforge-card p-6">
-              <div className="rounded-full bg-skillforge-100 w-12 h-12 flex items-center justify-center mb-4">
-                <Timer className="text-skillforge-600 h-6 w-6" />
+            <div className="candidly-card p-6">
+              <div className="rounded-full bg-candidly-100 w-12 h-12 flex items-center justify-center mb-4">
+                <Timer className="text-candidly-600 h-6 w-6" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Efficient Assessments</h3>
               <p className="text-gray-600">
@@ -82,9 +82,9 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="skillforge-card p-6">
-              <div className="rounded-full bg-skillforge-100 w-12 h-12 flex items-center justify-center mb-4">
-                <CheckCircle className="text-skillforge-600 h-6 w-6" />
+            <div className="candidly-card p-6">
+              <div className="rounded-full bg-candidly-100 w-12 h-12 flex items-center justify-center mb-4">
+                <CheckCircle className="text-candidly-600 h-6 w-6" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Data-Driven Hiring</h3>
               <p className="text-gray-600">
@@ -97,7 +97,7 @@ const Home = () => {
       
       {/* How It Works Section */}
       <section className="py-16 bg-white border-t border-gray-100">
-        <div className="skillforge-container">
+        <div className="candidly-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">How Candidly Works</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -107,10 +107,10 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-skillforge-600 text-white flex items-center justify-center font-bold">1</div>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-candidly-600 text-white flex items-center justify-center font-bold">1</div>
               <div className="pt-4">
-                <div className="rounded-full bg-skillforge-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
-                  <CreditCard className="text-skillforge-600 h-7 w-7" />
+                <div className="rounded-full bg-candidly-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
+                  <CreditCard className="text-candidly-600 h-7 w-7" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">Subscribe</h3>
                 <p className="text-gray-600 text-center">
@@ -120,13 +120,13 @@ const Home = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-skillforge-600 text-white flex items-center justify-center font-bold">2</div>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-candidly-600 text-white flex items-center justify-center font-bold">2</div>
               <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
                 <ChevronRight className="h-8 w-8 text-gray-300" />
               </div>
               <div className="pt-4">
-                <div className="rounded-full bg-skillforge-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
-                  <Settings className="text-skillforge-600 h-7 w-7" />
+                <div className="rounded-full bg-candidly-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
+                  <Settings className="text-candidly-600 h-7 w-7" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">Configure Exams</h3>
                 <p className="text-gray-600 text-center">
@@ -136,13 +136,13 @@ const Home = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-skillforge-600 text-white flex items-center justify-center font-bold">3</div>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-candidly-600 text-white flex items-center justify-center font-bold">3</div>
               <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
                 <ChevronRight className="h-8 w-8 text-gray-300" />
               </div>
               <div className="pt-4">
-                <div className="rounded-full bg-skillforge-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
-                  <Send className="text-skillforge-600 h-7 w-7" />
+                <div className="rounded-full bg-candidly-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
+                  <Send className="text-candidly-600 h-7 w-7" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">Invite Candidates</h3>
                 <p className="text-gray-600 text-center">
@@ -152,10 +152,10 @@ const Home = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-skillforge-600 text-white flex items-center justify-center font-bold">4</div>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-candidly-600 text-white flex items-center justify-center font-bold">4</div>
               <div className="pt-4">
-                <div className="rounded-full bg-skillforge-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
-                  <BarChart className="text-skillforge-600 h-7 w-7" />
+                <div className="rounded-full bg-candidly-100 w-14 h-14 flex items-center justify-center mb-4 mx-auto">
+                  <BarChart className="text-candidly-600 h-7 w-7" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">Review Results</h3>
                 <p className="text-gray-600 text-center">
@@ -167,7 +167,7 @@ const Home = () => {
           
           <div className="mt-12 text-center">
             <Button 
-              className="bg-skillforge-600 hover:bg-skillforge-700"
+              className="bg-candidly-600 hover:bg-candidly-700"
               asChild
             >
               <Link to="/signup">Get Started Today</Link>
@@ -178,7 +178,7 @@ const Home = () => {
       
       {/* Admin Dashboard Section */}
       <section className="py-16 bg-gray-50">
-        <div className="skillforge-container">
+        <div className="candidly-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="order-2 lg:order-1">
               <img 
@@ -194,24 +194,24 @@ const Home = () => {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-skillforge-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-candidly-600 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">Create custom assessments tailored to specific roles</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-skillforge-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-candidly-600 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">Review detailed candidate results and AI-generated insights</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-skillforge-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-candidly-600 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">Track candidate progress and compare performance metrics</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-skillforge-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-candidly-600 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">Generate comprehensive reports for your hiring team</span>
                 </li>
               </ul>
               <Button 
-                className="bg-skillforge-600 hover:bg-skillforge-700"
+                className="bg-candidly-600 hover:bg-candidly-700"
                 asChild
               >
                 <Link to="/signin">
@@ -225,7 +225,7 @@ const Home = () => {
       
       {/* Trusted Partners Section */}
       <section className="py-16 bg-white">
-        <div className="skillforge-container">
+        <div className="candidly-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Trusted by Industry Leaders</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -260,7 +260,7 @@ const Home = () => {
       
       {/* Testimonials Section */}
       <section className="py-16 bg-gray-50">
-        <div className="skillforge-container">
+        <div className="candidly-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">What Our Clients Say</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -271,8 +271,8 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-skillforge-100 flex items-center justify-center mr-4">
-                  <span className="text-skillforge-600 font-bold">JD</span>
+                <div className="w-12 h-12 rounded-full bg-candidly-100 flex items-center justify-center mr-4">
+                  <span className="text-candidly-600 font-bold">JD</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Jane Doe</h4>
@@ -286,8 +286,8 @@ const Home = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-skillforge-100 flex items-center justify-center mr-4">
-                  <span className="text-skillforge-600 font-bold">MS</span>
+                <div className="w-12 h-12 rounded-full bg-candidly-100 flex items-center justify-center mr-4">
+                  <span className="text-candidly-600 font-bold">MS</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Michael Smith</h4>
@@ -301,8 +301,8 @@ const Home = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-skillforge-100 flex items-center justify-center mr-4">
-                  <span className="text-skillforge-600 font-bold">AJ</span>
+                <div className="w-12 h-12 rounded-full bg-candidly-100 flex items-center justify-center mr-4">
+                  <span className="text-candidly-600 font-bold">AJ</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Alex Johnson</h4>
@@ -321,8 +321,8 @@ const Home = () => {
       <PricingSection />
       
       {/* CTA Section */}
-      <section className="py-16 bg-skillforge-600">
-        <div className="skillforge-container">
+      <section className="py-16 bg-candidly-600">
+        <div className="candidly-container">
           <div className="text-center text-white max-w-3xl mx-auto">
             <Brain className="h-12 w-12 mb-4 mx-auto text-white/80" />
             <h2 className="text-3xl font-bold mb-4">Ready to find your ideal candidate?</h2>
@@ -330,7 +330,7 @@ const Home = () => {
               Start using our AI-powered assessments to identify top talent for your organization.
             </p>
             <Button 
-              className="bg-white text-skillforge-600 hover:bg-gray-100 px-8 py-6 text-lg"
+              className="bg-white text-candidly-600 hover:bg-gray-100 px-8 py-6 text-lg"
               asChild
             >
               <Link to="/exams">Browse Assessment Types</Link>

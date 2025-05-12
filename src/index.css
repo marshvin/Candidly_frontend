@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,23 +95,23 @@
 }
 
 @layer components {
-  .skillforge-container {
+  .candidly-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
-  .skillforge-card {
+  .candidly-card {
     @apply bg-white rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300;
   }
   
-  .skillforge-btn-primary {
-    @apply bg-skillforge-600 hover:bg-skillforge-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200;
+  .candidly-btn-primary {
+    @apply bg-candidly-600 hover:bg-candidly-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200;
   }
   
-  .skillforge-btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-skillforge-600 border border-skillforge-200 font-medium py-2 px-4 rounded-md transition-colors duration-200;
+  .candidly-btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-candidly-600 border border-candidly-200 font-medium py-2 px-4 rounded-md transition-colors duration-200;
   }
   
-  .skillforge-input {
-    @apply px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-skillforge-500 focus:border-transparent;
+  .candidly-input {
+    @apply px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-candidly-500 focus:border-transparent;
   }
 }

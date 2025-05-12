@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -71,7 +70,7 @@ const ResultsView = () => {
         </Button>
         
         <Button 
-          className="bg-skillforge-600 hover:bg-skillforge-700"
+          className="bg-candidly-600 hover:bg-candidly-700"
           onClick={() => navigate('/')}
         >
           <Home className="mr-2 h-4 w-4" /> Go Home

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -26,7 +25,7 @@ const QuestionNav: React.FC<QuestionNavProps> = ({
             className={cn(
               "flex items-center justify-center h-10 w-10 rounded-md text-sm font-medium transition-colors",
               currentQuestion === i
-                ? "bg-skillforge-600 text-white ring-2 ring-skillforge-200"
+                ? "bg-candidly-600 text-white ring-2 ring-candidly-200"
                 : answeredQuestions[i]
                 ? "bg-green-100 text-green-800 hover:bg-green-200"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"

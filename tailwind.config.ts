@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				skillforge: {
+				candidly: {
 					50: '#f5f3ff',
 					100: '#ede9fe',
 					200: '#ddd6fe',

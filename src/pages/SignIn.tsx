@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { z } from 'zod';
@@ -65,7 +64,7 @@ const SignIn = () => {
       <main className="flex-grow flex items-center justify-center py-12 bg-gray-50">
         <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg">
           <div className="text-center space-y-2">
-            <h1 className="text-2xl font-bold text-gray-900">Sign In to SkillForge</h1>
+            <h1 className="text-2xl font-bold text-gray-900">Sign In to Candidly</h1>
             <p className="text-gray-600">
               Enter your credentials to access your account
             </p>
@@ -143,19 +142,19 @@ const SignIn = () => {
                   )}
                 />
                 
-                <Link to="/forgot-password" className="text-sm font-medium text-skillforge-600 hover:underline">
+                <Link to="/forgot-password" className="text-sm font-medium text-candidly-600 hover:underline">
                   Forgot password?
                 </Link>
               </div>
               
-              <Button type="submit" className="w-full bg-skillforge-600 hover:bg-skillforge-700">
+              <Button type="submit" className="w-full bg-candidly-600 hover:bg-candidly-700">
                 <LogIn className="mr-2 h-4 w-4" /> Sign In
               </Button>
               
               <div className="text-center">
                 <p className="text-sm text-gray-600">
                   Don't have an account?{' '}
-                  <Link to="/signup" className="text-skillforge-600 hover:underline font-medium">
+                  <Link to="/signup" className="text-candidly-600 hover:underline font-medium">
                     Sign up
                   </Link>
                 </p>
